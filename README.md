@@ -11,6 +11,8 @@ A simple plagiarism checker built using Python, Streamlit, and NLP techniques. T
 
 ## Installation Steps
 
+### For macOS
+
 1. **Clone the repository**:
     ```bash
     git clone https://github.com/your-username/plagiarism-checker.git
@@ -19,8 +21,8 @@ A simple plagiarism checker built using Python, Streamlit, and NLP techniques. T
 
 2. **Create and activate a virtual environment**:
     ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    python3 -m venv venv
+    source venv/bin/activate
     ```
 
 3. **Install dependencies**:
@@ -28,7 +30,12 @@ A simple plagiarism checker built using Python, Streamlit, and NLP techniques. T
     pip install -r requirements.txt
     ```
 
-4. **Download necessary NLTK datasets**:
+4. **Install Xcode Command Line Tools** (if not installed):
+    ```bash
+    xcode-select --install
+    ```
+
+5. **Download necessary NLTK datasets**:
     Run the following Python code to download required NLTK datasets:
     ```python
     import nltk
@@ -37,7 +44,7 @@ A simple plagiarism checker built using Python, Streamlit, and NLP techniques. T
     nltk.download('stopwords')
     ```
 
-5. **Run the Streamlit app**:
+6. **Run the Streamlit app**:
     ```bash
     streamlit run app.py
     ```
